@@ -5,6 +5,7 @@ var istanbul = require('istanbul');
 module.exports = function(source) {
     var instrumenter = new istanbul.Instrumenter({
         embedSource: true,
+        esModules: true,
         noAutoWrap: true
     });
 
